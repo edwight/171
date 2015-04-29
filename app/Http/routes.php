@@ -14,6 +14,9 @@
 Route::get('/', 'WelcomeController@index');
 
 Route::get('home', 'HomeController@index');
+Route::get('admin', 'AdminController@getIndex');
+Route::get('admin/estadisticas', 'AdminController@getEstadisticas');
+
 Route::get('form', function(){
 	return view('form');
 });
